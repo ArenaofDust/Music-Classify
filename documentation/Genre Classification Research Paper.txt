@@ -1,5 +1,5 @@
 ﻿Music Genre Classification Using Decision Tree Algorithms
-Nathan Kabongo
+Nathan K……
 Data Mining Research Paper
 Libraries: Pandas, Numpy, Sci-Kit Learn
 
