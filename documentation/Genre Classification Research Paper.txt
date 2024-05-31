@@ -1,7 +1,7 @@
 ﻿Music Genre Classification Using Decision Tree Algorithms
 Nathan K……
 Data Mining Research Paper
-Libraries: Pandas, Numpy, Sci-Kit Learn
+Libraries: Pandas, Numpy, Sci-Kit Learn, Matplotlib
 
 
 Abstract--Recommendation systems are becoming increasingly popular within the streaming world, and part of their success is predicated on algorithms that can accurately determine which genres of music that a user is favorable to. Music has nominal and categorical characteristics that can allow one to deduce the genre if the correct training methods are applied. The goal of this research is to apply various decision tree algorithms to a large dataset of songs to determine which algorithms have the best accuracy and which features are most important for predicting music genres.
@@ -119,7 +119,7 @@ Table 3.3: Feature Importance of Decision Stump Classifier
 
 
 
-The Decision Stump Classifier was the worst performing classifier very accurate with a score of 20 percent. The recall also had a score of 20 percent but the precision only had a score of four percent. I expected the Decision Stump to be the wordst performing classifier because it is the only classifier which is considered a weak learner. Popularity ended up being the most important feature and all the other features were set to 0. Since the depth of the decision stump was so low, the Precision was ill-defined and being set to 0.0 in labels with no predicted samples.
+The Decision Stump Classifier was the worst performing classifier and not very accurate, with a score of 20 percent. The recall also had a score of 20 percent but the precision only had a score of four percent. I expected the Decision Stump to be the worst-performing classifier because it is the only classifier that is considered a weak learner. Popularity ended up being the most important feature, and all the other features were set to 0. Since the depth of the decision stump was so low, the Precision was ill-defined and being set to 0.0 in labels with no predicted samples.
 
 
 
@@ -138,7 +138,7 @@ Table 4.4: Feature Importance of Gradient Boost Classifier
 
   
 
-        The Gradient Boost Classifier was the best performing classifier at this stage with an accuracy of 57 percent. The recall and precision also had scores of 57 percent. Popularity ended up being the most important feature and with mode being the least important. Due to this classifier having the highest score, I decided to see if I could improve the accuracy and I was successful in doing so.
+        The Gradient Boost Classifier was the best-performing classifier at this stage with an accuracy of 57 percent. The recall and precision also had scores of 57 percent. Popularity ended up being the most important feature, with mode being the least important. Due to this classifier having the highest score, I decided to see if I could improve the accuracy, and I was successful in doing so.
 
 
 Table 5: Evaluation of Gradient Boost Classifier
@@ -172,7 +172,7 @@ Table 5.5: Feature Importance of Gradient Boost Classifier
 
 4. CONCLUSION
                 The best-performing decision tree classifier was the gradient boost, with an accuracy of 76 percent, a recall of 76 percent, and a precision score of 77 percent. All of the decision tree classifiers had popularity as the feature with the highest importance. This was very surprising to me. I thought that the feature with the highest importance would have something to do with how the music sounded. 
-                  However,  I think that popularity being the most important feature can make sense in a vacuum since it may be the most important feature for current recommendation systems. When you use Spotify, you are usually recommended the most popular songs at the time, regardless of what genre that you listen to most. While the classes were evenly balanced, the popularity measures may not have been balanced across them which means that certain scores may have been highly correlated to certIn genres. 0.5, for example, might have been the most likely score for country music and so if that was the number guessed, then the algorithm could accurately predict that best.
+                  However,  I think that popularity being the most important feature can make sense in a vacuum since it may be the most important feature for current recommendation systems. When you use Spotify, you are usually recommended the most popular songs at the time, regardless of what genre you listen to most. While the classes were evenly balanced, the popularity measures may not have been balanced across them, which means that certain scores may have been highly correlated to certain genres. 0.5, for example, might have been the most likely score for country music and so if that was the number guessed, then the algorithm could accurately predict that best.
           
 
 
